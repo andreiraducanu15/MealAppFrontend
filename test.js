@@ -1,5 +1,4 @@
 function testFunction(){
-    console.log("Salut");
 
     $.ajax({
         url: "http://localhost:4200/meal/random"
@@ -36,7 +35,6 @@ function testFunction(){
         document.getElementById("table").outerHTML = html;
     });
 
-    console.log("muie");
 }
 
 
@@ -116,5 +114,7 @@ function populateIngredientsTable(data, html){
         tmp = "<tr class=\"tableStyle\"><td class=\"tableStyle\">" + data.strIngredient15 + "</td><td class=\"tableStyle\">" + data.strMeasure15 + "</td></tr>\n";
         html = html + tmp;
     }
+
+
     return html;
 }
